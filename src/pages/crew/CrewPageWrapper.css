@@ -1,0 +1,25 @@
+.crew-title {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 5rem;
+  }
+  
+  .title-number {
+  font-weight: 900;
+  color: #4d4d4d;
+  }
+  
+  .title-text {
+   color: var(--third-bg-color);
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .crew-title {
+    margin-left: var(--m-left-root);
+    justify-content: flex-start;
+  }
+  }

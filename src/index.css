@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+  --primary-font-family: 'Bellefair';
+  --secondary-font-family: 'Barlow Condensed', sans-serif;
+  --primary-bg-color: #0b0d17;
+  --secondary-bg-color: #d0d6f9;
+  --third-bg-color: #f2f2f2;
+  --uppercase: uppercase;
+  --bold: bold;
+  --m-left-root: 7rem;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+}
+
+.heading-1 {
+  font-family: var(--primary-font-family);
+  font-size: 150px;
+  text-transform: var(--uppercase);
+}
+
+.heading-2 {
+  font-family: var(--primary-font-family);
+  font-size: 100px;
+  text-transform: var(--uppercase);
+}
+
+.heading-3 {
+  font-family: var(--primary-font-family);
+  font-size: 56px;
+  text-transform: var(--uppercase);
+}
+
+.heading-4 {
+  font-family: var(--primary-font-family);
+  font-size: 32px;
+  text-transform: var(--uppercase);
+}
+
+.heading-5 {
+  font-family: var(--secondary-font-family);
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  text-transform: var(--uppercase);
+}
+
+.sub-heading-1 {
+  font-family: var(--primary-font-family);
+  font-size: 28px;
+  text-transform: var(--uppercase);
+}
+
+.sub-heading-2 {
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  text-transform: var(--uppercase);
+}
+
+.nav-text {
+  font-family: var(--secondary-font-family);
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-transform: var(--uppercase);
+}
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.home-bg-image {
+  background-image: url('./assets/home/background-home-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.destination-bg-image {
+  background-image: url('./assets/destination/background-destination-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.crew-bg-image {
+  background-image: url('./assets/crew/background-crew-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.technology-bg-image {
+  background-image: url('./assets/technology/background-technology-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .home-bg-image {
+    background-image: url('./assets/home/background-home-tablet.jpg');
+  }
+  
+  .destination-bg-image {
+    background-image: url('./assets/destination/background-destination-tablet.jpg');
+  }
+  
+  .crew-bg-image {
+    background-image: url('./assets/crew/background-crew-tablet.jpg');
+  }
+  
+  .technology-bg-image {
+    background-image: url('./assets/technology/background-technology-tablet.jpg');
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-bg-image {
+    background-image: url('./assets/home/background-home-desktop.jpg');
+  }
+  
+  .destination-bg-image {
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
+  }
+  
+  .crew-bg-image {
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+  }
+  
+  .technology-bg-image {
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+  }
+}

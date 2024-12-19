@@ -1,0 +1,150 @@
+.tab-section-destinations {
+  margin: 0 var(--m-left-root);
+}
+
+.tab-content-destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-image {
+  width: 350px;
+  height: 30%;
+  padding: 0 2rem;
+}
+
+.destination-info {
+  color: var(--secondary-bg-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.tab-buttons-destinations {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn-text-destinations {
+  color: var(--secondary-bg-color);
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    color: var(--third-bg-color);
+  }
+  &:hover::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(242, 242, 242, 0.5);
+  }
+}
+
+.active-destination {
+  color: var(--third-bg-color);
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(242, 242, 242);
+  }
+}
+
+.destination-name {
+  color: var(--third-bg-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.destination-description {
+  text-overflow: ellipsis;
+  max-width: 400px;
+  line-height: 2rem;
+  margin-bottom: 3.5rem;
+  height: 130px;
+}
+
+.destination-line {
+  width: calc(100vw - var(--m-left-root)*2);
+  height: 1px;
+  background-color: rgb(242, 242, 242, 0.5);
+  margin-bottom: 1rem;
+}
+
+.destination-location {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.avg-distance-value {
+  color: var(--third-bg-color);
+  margin: 0.7rem 0 0 0;
+}
+
+.travel-time-value {
+  color: var(--third-bg-color);
+  margin: 0.7rem 0 0 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .destination-location {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .destination-description {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .tab-content-destinations {
+    flex-direction: row;
+    gap: 7rem;
+  }
+
+  .destination-info {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .tab-buttons-destinations {
+    justify-content: left;
+  }
+
+  .destination-line {
+    width: 400px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
